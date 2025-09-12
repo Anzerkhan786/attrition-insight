@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -46,6 +47,7 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+          glass: "hsl(var(--card-glass))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -57,6 +59,35 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Analytics-specific colors
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        danger: {
+          DEFAULT: "hsl(var(--danger))",
+          foreground: "hsl(var(--danger-foreground))",
+        },
+        analytics: {
+          surface: "hsl(var(--analytics-surface))",
+          border: "hsl(var(--analytics-border))",
+          hover: "hsl(var(--analytics-hover))",
+        },
+      },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-success': 'var(--gradient-success)',
+        'gradient-warning': 'var(--gradient-warning)',
+        'gradient-glass': 'var(--gradient-glass)',
+      },
+      boxShadow: {
+        'glow': 'var(--shadow-glow)',
+        'soft': 'var(--shadow-soft)',
+        'card': 'var(--shadow-card)',
       },
       borderRadius: {
         lg: "var(--radius)",
