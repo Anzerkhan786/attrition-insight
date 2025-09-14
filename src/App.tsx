@@ -6,6 +6,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
+import Explorer from "./pages/Explorer";
+import Modeling from "./pages/Modeling";
+import Simulator from "./pages/Simulator";
+import Upload from "./pages/Upload";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,19 +27,19 @@ const App = () => (
             <Route index element={<Dashboard />} />
           </Route>
           <Route path="/explorer" element={<Layout />}>
-            <Route index element={<div className="p-6">Employee Explorer - Coming Soon</div>} />
+            <Route index element={<Explorer />} />
           </Route>
           <Route path="/modeling" element={<Layout />}>
-            <Route index element={<div className="p-6">Modeling & Explainability - Coming Soon</div>} />
+            <Route index element={<Modeling />} />
           </Route>
           <Route path="/simulator" element={<Layout />}>
-            <Route index element={<div className="p-6">Scenario Simulator - Coming Soon</div>} />
+            <Route index element={<Simulator />} />
           </Route>
           <Route path="/upload" element={<Layout />}>
-            <Route index element={<div className="p-6">Data Upload - Coming Soon</div>} />
+            <Route index element={<Upload />} />
           </Route>
           <Route path="/settings" element={<Layout />}>
-            <Route index element={<div className="p-6">Settings - Coming Soon</div>} />
+            <Route index element={<Settings />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
